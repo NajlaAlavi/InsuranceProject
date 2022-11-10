@@ -17,58 +17,60 @@
 
             <div class="policy-container">
                 <div class="leftcontent-policy-container">
+                    <ul class="row">
+                        <li class="from-content" [matMenuTriggerFor]="menu">
+                            <div class="content1-policy">
+                                <label class="lab">Select Policy type</label>
+                                <h6>Individual</h6>
+                            </div>
+                            <mat-menu #menu="matMenu" class="menu-style">
+                                <button mat-menu-item>Individual</button>
+                                <button mat-menu-item>Family</button>
+                            </mat-menu>
+                        </li>
+                        <div class="horizon-line1"></div>
+                        <li class="to-content" [matMenuTriggerFor]="menucoverage">
+                            <label class="lab">Coverage Type</label>
+                            <h6>Single Trip</h6>
+                        </li>
+                        <mat-menu #menucoverage="matMenu">
+                            <button mat-menu-item>Single Trip</button>
+                            <button mat-menu-item>Annual Multi Trip</button>
+                        </mat-menu>
 
-                    <div class="content1-policy">
-                        <p>SELECT POLICY TYPE</p>
-                        <h2><b>Individual</b></h2>
-                    </div>
-
-                    <div class="content2-coverage">
-
-                        <div class="vertical-line"></div>
-
-                        <div>
-                            <p class="coverage">COVERAGE TYPE</p>
-                            <h2><b>Single Trip</b></h2>
-                        </div>
-
-                    </div>
-
-                    <div class="content3-destination">
-
-                        <div class="vertical-line"></div>
-
-                        <div>
-                            <p class="destination">DESTINATION COUNTRY</p>
-                            <h2><b>UAE</b></h2>
-                        </div>
-                    </div>
-
+                    </ul>
                 </div>
-
                 <div class="right-content-datecontainer">
-                    <h5 class="date"><i class="fa fa-calendar"></i>START DATE</h5>
-                    <span class="date-span">11</span><span>APR'22</span>
+                    <ul class="row1">
+                        <li class="dest-content">
+                            <label class="destin">Destination Country</label>
+                            <h6 class="destination">UAE</h6>
+                            
+                        </li>
+                       <div class="horizon-line2">
+
+                       </div>
+                        <li class="date">
+                           
+                            <label class="lab"><i class="fa fa-calendar"></i>    Start Date &#9660; </label>
+                            <h6><span style="margin-left: 5px;" class="date-span"><b>11</b></span><span class="date-month">APR'22</span></h6>
+
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-
-            <div class="passenger-container">
-                <div class="passenger-content">
-
-                    <div class="checkbox"> <input class="senior-checkbox" type="checkbox" name="senior"
-                            checked="checked"> <label style="font-weight: bold;" for="senior">Senior Citizen</label>
-                    </div>
-                    <p><span class="two-color">2</span><b>Passengers</b> <span class="caret"></span></p>
-
+        
+    
+            <div class="passenger-details-cont">
+                <div class="checkbox-align">
+                    <input class="seniorbox" type="checkbox" checked="checked"> <label for="snr">Senior Citizen</label>  
                 </div>
-
-                <div class="passenger-content">
-                    <p> <b>Select Plan</b> <span class="caret"></span></p>
-                    <p> <b>Period of coverage</b> <span class="caret"></span></p>
-                </div>
-
+                <p><span>2</span>Passengers &#9660;</p>
+                <p>Select Plan &#9660;</p>
+                <p>Period of Coverage &#9660;</p>
+                   
             </div>
+           
 
             <div class="horizontal-line">
 
@@ -77,12 +79,14 @@
             <div class="passenger-checkbox-container">
                 <div class="passenger-checkbox">
 
-                    <div class="checkbox"> <input class="content-checkbox" type="checkbox" name="Hazzard"> <label
-                            style="font-weight: bold;" for="Hazzard&Winter">Hazzards & Winter Sports</label></div>
-                    <div class="checkbox"> <input class="content-checkbox" type="checkbox" name="Terrorism"> <label
-                            style="font-weight: bold;" for="Terrorism">Terrorism</label></div>
-                    <div class="checkbox"> <input class="content-checkbox" type="checkbox" name="Terrorism&Winter">
-                        <label style="font-weight: bold;" for="Terrorism&Winter">Terrorism & Winter Sports</label></div>
+                    <div class="checkbox"> <input class="content-checkbox" type="checkbox" > <label
+                            style="font-weight: bold; " for="Hazzard&Winter">Hazzards & Winter Sports</label> </div>
+
+                    <div class="checkbox"> <input class="content-checkbox" type="checkbox" > <label
+                            style="font-weight: bold;" for="Terrorism">Terrorism</label> </div>
+                            
+                    <div class="checkbox"> <input class="content-checkbox" type="checkbox">
+                        <label style="font-weight: bold;" for="Terrorism&Winter">Terrorism & Winter Sports</label> </div>
                 </div>
 
                 <div class="passengers-btn">
@@ -91,30 +95,7 @@
 
             </div>
 
-            <div class="horizontal-line">
-
-            </div>
-
-            <div class="bottom-amount-content">
-                <div class="bottom-amount-left">
-
-                    <div class="amount">
-                        <h6 style="color: #C5C0C1; font-weight: bold;">NET AMOUNT</h6>
-                        <h4><b>AED 354</b> &nbsp; <span class="vat">(Inclusive of VAT)</span></h4>
-                    </div>
-
-                    <div style="align-self:center ;margin-left: 50px;">
-
-                        <button class="plandetails-view-link"><span>VIEW PLAN DETAILS <i class="fa fa-external-link"
-                                    style="color: #002E85 ;"> </i></span></button>
-                    </div>
-                </div>
-
-                <div style="align-self:flex-end;">
-                    <button class="bottom-right-continue-btn">Continue</button>
-                </div>
-            </div>
-
+            
         </div>
     </div>
 </div>

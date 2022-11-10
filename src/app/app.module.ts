@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AeSearchComponent } from './components/ae/ae-search/ae-search.component';
+import { MaterialModule } from './material/material.module';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { AeSearchComponent } from './components/ae/ae-search/ae-search.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
